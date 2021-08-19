@@ -31,37 +31,20 @@ export const Navbar = () => {
                 About Us
               </a>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#Dropdown"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
+            <li className="nav-item">
+              <a className="nav-link" href="#Link">
+                kids
               </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a className="dropdown-item" href="#Action">
-                    Men
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#other">
-                    Women
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#else">
-                    Kids
-                  </a>
-                </li>
-              </ul>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#Link">
+                Women
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#Link">
+                Men
+              </a>
             </li>
           </ul>
           <form className="d-flex">
