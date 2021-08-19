@@ -1,11 +1,20 @@
 .mainhead {
-  margin: 2rem;
+  margin: 1rem;
   text-align: center;
   font-size: 1.5rem;
 }
+.container {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  /* border: 1px solid white; */
+  justify-content: center;
+  align-items: center;
+}
 
 .cat {
-  margin: 3rem;
+  margin: 0;
+  padding: 0;
 }
 
 .slide {
@@ -25,7 +34,9 @@
   width: 20%;
   height: 100;
 }
-.content {
+.deep {
+  height: 400%;
+  width: 400%;
   display: block;
   border-radius: 50%;
 }

@@ -2,73 +2,81 @@ export const Category = () => {
   return (
     <div>
       <h1 className="head">Categories</h1>
-      <div className="row cat">
-        <div className="col">
-          <svg
-            className="bd-placeholder-img rounded-circle"
-            width="140"
-            height="140"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">
-              140x140
-            </text>
-          </svg>
-
-          <h2>Heading</h2>
-          <p>
-            Some representative placeholder content for the three columns of
-            text below the carousel. This is the first column.
-          </p>
+      <div className="container">
+        <div className="cat">
+          <div className="inner box">
+            <div>
+              <img
+                src="https://i.pinimg.com/originals/93/ed/25/93ed25ee4cff772292d0c4dfaa476f9a.jpg"
+                className="card-img-top  deep"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">hello from here</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="col-lg-4">
-          <svg
-            className="bd-placeholder-img rounded-circle"
-            width="140"
-            height="140"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 140x140"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">
-              140x140
-            </text>
-          </svg>
-
-          <h2>Heading</h2>
-          <p>
-            Some representative placeholder content for the three columns of
-            text below the carousel. This is the first column.
-          </p>
+        <div className="cat">
+          <div className="inner box">
+            <div>
+              <img
+                src="https://i.pinimg.com/originals/93/ed/25/93ed25ee4cff772292d0c4dfaa476f9a.jpg"
+                className="card-img-top  deep"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">hello from here</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="col-lg-4">
-          <svg
-            className="bd-placeholder-img rounded-circle"
-            width="140"
-            height="140"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-label="Placeholder: 140x140"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">
-              140x140
-            </text>
-          </svg>
-
-          <h2>Heading</h2>
-          <p>
-            Some representative placeholder content for the three columns of
-            text below the carousel. This is the first column.
-          </p>
+        <div className="cat">
+          <div className="inner box">
+            <div>
+              <img
+                src="https://i.pinimg.com/originals/93/ed/25/93ed25ee4cff772292d0c4dfaa476f9a.jpg"
+                className="card-img-top  deep"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">hello from here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="cat">
+          <div className="inner box">
+            <div>
+              <img
+                src="https://i.pinimg.com/originals/93/ed/25/93ed25ee4cff772292d0c4dfaa476f9a.jpg"
+                className="card-img-top  deep"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">hello from here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="cat">
+          <div className="inner box">
+            <div>
+              <img
+                src="https://i.pinimg.com/originals/93/ed/25/93ed25ee4cff772292d0c4dfaa476f9a.jpg"
+                className="card-img-top  deep"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">hello from here</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
