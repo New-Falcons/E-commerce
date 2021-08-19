@@ -30,21 +30,21 @@ export const Slider = () => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src="https://skcompanies.in/wp-content/uploads/2017/03/shopping-banner-img.jpg"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/apparel/GW/EOSS/December/EOSS-1024x300._CB458424228_.jpg"
             className="d-block w-100 "
             alt="..."
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://pngimage.net/wp-content/uploads/2018/06/online-shopping-banner-png-7.png"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img16/apparel/EOSS/topbrands/TB-PC._CB490712334_.jpg"
             className="d-block w-100"
             alt="..."
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://orig00.deviantart.net/8901/f/2012/019/5/5/shopping_deals_banner_by_aliraza91-d4mzgz6.jpg"
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Luggage/Apr/Value_Days/1024x300.jpg"
             className="d-block w-100"
             alt="..."
           />
