@@ -1,6 +1,31 @@
+.mainhead {
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.cat {
+  margin: 3rem;
+}
+
 .slide {
   margin-top: 2rem;
 }
 .head {
-  margin: 3rem 2rem;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+.cardone {
+  margin: 1rem;
+  display: flex;
+}
+.inner {
+  margin: 0.7rem;
+  width: 20%;
+  height: 100;
+}
+.content {
+  display: block;
+  border-radius: 50%;
 }
