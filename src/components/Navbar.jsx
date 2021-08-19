@@ -6,7 +6,7 @@ export const Navbar = () => {
     >
       <div className="container-fluid ">
         <a className="navbar-brand" href="#Nav">
-          Navbar
+          Falcon-Store
         </a>
         <button
           className="navbar-toggler"
@@ -26,11 +26,7 @@ export const Navbar = () => {
                 Home
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#Link">
-                About Us
-              </a>
-            </li>
+
             <li className="nav-item">
               <a className="nav-link" href="#Link">
                 kids

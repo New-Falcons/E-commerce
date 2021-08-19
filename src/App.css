@@ -4,12 +4,12 @@
   font-size: 1.5rem;
 }
 .container {
-  margin: 0;
-  width: 100%;
+  margin: auto;
+  width: 100vw;
   display: flex;
   /* border: 1px solid white; */
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  background: rgb(255, 241, 241);
 }
 
 .cat {
