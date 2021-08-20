@@ -3,6 +3,11 @@
   text-align: center;
   font-size: 1.5rem;
 }
+
+.navbar-brand {
+  font-size: x-large;
+  font-weight: 4rem;
+}
 .container {
   margin: auto;
   width: 100vw;

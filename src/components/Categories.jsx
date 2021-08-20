@@ -12,8 +12,8 @@ export const Category = () => {
                 alt="..."
               />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">hello from here</p>
+                <h5 className="card-title">Tshirt</h5>
+                <p className="card-text">❤</p>
               </div>
             </div>
           </div>
@@ -27,8 +27,8 @@ export const Category = () => {
                 alt="..."
               />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">hello from here</p>
+                <h5 className="card-title">Shirt</h5>
+                <p className="card-text">👚</p>
               </div>
             </div>
           </div>
@@ -42,8 +42,8 @@ export const Category = () => {
                 alt="..."
               />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">hello from here</p>
+                <h5 className="card-title">Jeans</h5>
+                <p className="card-text">👖</p>
               </div>
             </div>
           </div>
