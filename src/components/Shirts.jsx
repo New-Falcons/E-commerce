@@ -13,7 +13,7 @@ export const Shirts = () => {
             />
             <div className="card-body">
               <h4 className="card-title" style={{textAlign:"start"}}>{shirts[0].title}</h4>
-              <h6 className="brand-name">Rs: {shirts[0].price}</h6>
+              <h6 className="brand-name">Rs. {shirts[0].price}</h6>
             </div>
           </div>
         </div>
@@ -26,7 +26,7 @@ export const Shirts = () => {
             />
             <div className="card-body">
               <h4 className="card-title" style={{textAlign:"start"}}>{shirts[1].title}</h4>
-              <h6 className="brand-name">Rs: {shirts[1].price}</h6>
+              <h6 className="brand-name">Rs. {shirts[1].price}</h6>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ export const Shirts = () => {
             />
             <div className="card-body">
               <h4 className="card-title" style={{textAlign:"start"}}>{shirts[2].title}</h4>
-              <h6 className="brand-name">Rs: {shirts[2].price}</h6>
+              <h6 className="brand-name">Rs. {shirts[2].price}</h6>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ export const Shirts = () => {
             />
             <div className="card-body">
               <h4 className="card-title" style={{textAlign:"start"}}>{shirts[3].title}</h4>
-              <h6 className="brand-name">Rs: {shirts[3].price}</h6>
+              <h6 className="brand-name">Rs. {shirts[3].price}</h6>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ export const Shirts = () => {
             />
             <div className="card-body">
               <h4 className="card-title" style={{textAlign:"start"}}>{shirts[4].title}</h4>
-              <h6 className="brand-name">Rs: {shirts[4].price}</h6>
+              <h6 className="brand-name">Rs. {shirts[4].price}</h6>
             </div>
           </div>
         </div>
