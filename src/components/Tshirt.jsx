@@ -1,3 +1,4 @@
+import { tshirts } from "../data/db.json";
 export const Tshirts = () => {
   return (
     <div>
@@ -5,66 +6,56 @@ export const Tshirts = () => {
       <div className="cardone">
         <div className="inner">
           <div className="content">
-            <img
-              src="https://www.babyshop.com/images/585687/card_xlarge.jpg"
-              className="card-img-top"
-              alt="..."
-            />
+            <img src={tshirts[0].url} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">hello from here</p>
+              <h4 className="card-title" style={{ textAlign: "start" }}>
+                {tshirts[0].title}
+              </h4>
+              <h6 className="brand-name">Rs. {tshirts[0].price}</h6>
             </div>
           </div>
         </div>
         <div className="inner">
           <div className="content">
-            <img
-              src="https://www.babyshop.com/images/593596/card_xlarge.jpg"
-              className="card-img-top"
-              alt="..."
-            />
+            <img src={tshirts[1].url} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">hello from here</p>
+              <h4 className="card-title" style={{ textAlign: "start" }}>
+                {tshirts[1].title}
+              </h4>
+              <h6 className="brand-name">Rs. {tshirts[1].price}</h6>
             </div>
           </div>
         </div>
         <div className="inner">
           <div className="content">
-            <img
-              src="https://i.pinimg.com/originals/8e/36/ab/8e36ab1667dfe8e0b6796e8c441ad2ca.jpg"
-              className="card-img-top"
-              alt="..."
-            />
+            <img src={tshirts[2].url} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">hello from here</p>
+              <h4 className="card-title" style={{ textAlign: "start" }}>
+                {tshirts[2].title}
+              </h4>
+              <h6 className="brand-name">Rs. {tshirts[2].price}</h6>
             </div>
           </div>
         </div>
         <div className="inner">
           <div className="content">
-            <img
-              src="https://3.imimg.com/data3/TO/FG/MY-8393855/polo-t-shirt-500x500.jpg"
-              className="card-img-top"
-              alt="..."
-            />
+            <img src={tshirts[3].url} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">hello from here</p>
+              <h4 className="card-title" style={{ textAlign: "start" }}>
+                {tshirts[3].title}
+              </h4>
+              <h6 className="brand-name">Rs. {tshirts[3].price}</h6>
             </div>
           </div>
         </div>
         <div className="inner">
           <div className="content">
-            <img
-              src="https://i.pinimg.com/originals/93/ed/25/93ed25ee4cff772292d0c4dfaa476f9a.jpg"
-              className="card-img-top"
-              alt="..."
-            />
+            <img src={tshirts[4].url} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">hello from here</p>
+              <h4 className="card-title" style={{ textAlign: "start" }}>
+                {tshirts[4].title}
+              </h4>
+              <h6 className="brand-name">Rs. {tshirts[4].price}</h6>
             </div>
           </div>
         </div>
