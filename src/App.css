@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +65,7 @@
   background-position: center;
 }
 .icon {
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
 }
 .card-title {
   width: 150px;
@@ -93,7 +93,7 @@
   cursor: pointer;
   transition: all ease 0.3s;
   border-radius: 5px;
-  background-color: rgb(246,245,248);
+  background-color: rgb(246, 245, 248);
 }
 
 
