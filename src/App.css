@@ -1,7 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 .mainhead {
   margin: 1rem;
   text-align: center;
   font-size: 1.5rem;
+}
+.nav {
+  box-shadow: 0px 1px 5px 0.5px;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  top: 0;
 }
 .container {
   margin: auto;
@@ -18,7 +30,7 @@
 }
 
 .slide {
-  margin-top: 2rem;
+  margin-top: 80px;
 }
 .head {
   margin-top: 6rem;
@@ -39,4 +51,17 @@
   width: 400%;
   display: block;
   border-radius: 50%;
+}
+.icon {
+  font-family: "Fredoka One", cursive;
+}
+.profile {
+  /* justify-content: space-around; */
+  display: flex;
+  padding: 10px 30px;
+  justify-content: space-between;
+}
+.profile i {
+  padding-inline: 15px;
+  font-size: 2rem;
 }
