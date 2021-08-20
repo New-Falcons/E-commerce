@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 export const Navbar = () => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light nav"
-      style={{ backgroundColor: 'rgb(255, 255, 255)' }}
+      style={{ backgroundColor: "rgb(255, 255, 255)" }}
     >
       <div className="container-fluid ">
-        <a className="navbar-brand icon" href="#Nav" >
-          STORE-360
-        </a>
+        <Link to="/">
+          <h2 className="icon">Store-360</h2>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -54,8 +56,10 @@ export const Navbar = () => {
               Search
             </button>
             <div className="profile">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <i class="fa fa-user" aria-hidden="true"></i>
+              <Link to="/cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </Link>
+              <i class="fa fa-user" aria-hidden="true"></i>
             </div>
           </form>
         </div>
