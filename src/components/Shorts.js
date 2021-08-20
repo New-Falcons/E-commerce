@@ -1,71 +1,71 @@
-import {jeans} from "../data/db.json"
-export const Jeans = () => {
+import {shortstrouser} from "../data/db.json"
+export const Shorts = () => {
   return (
     <div>
-      <h1 className="head">Jeans</h1>
+      <h1 className="head">Shorts-Trousers</h1>
       <div className="cardone">
         <div className="inner">
           <div className="content">
             <img
-              src={jeans[0].url}
+              src={shortstrouser[0].url}
               className="card-img-top"
               alt="..."
             />
             <div className="card-body">
-              <h4 className="card-title" style={{textAlign:"start"}}>{jeans[0].title}</h4>
-              <h6 className="card-text">Rs. {jeans[0].price}</h6>
+              <h4 className="card-title" style={{textAlign:"start"}}>{shortstrouser[0].title}</h4>
+              <h6 className="card-text">Rs. {shortstrouser[0].price}</h6>
             </div>
           </div>
         </div>
         <div className="inner">
           <div className="content">
             <img
-              src={jeans[1].url}
+              src={shortstrouser[1].url}
               className="card-img-top"
               alt="..."
             />
             <div className="card-body">
-              <h4 className="card-title" style={{textAlign:"start"}}>{jeans[1].title}</h4>
-              <h6 className="card-text">Rs. {jeans[1].price}</h6>
+              <h4 className="card-title" style={{textAlign:"start"}}>{shortstrouser[1].title}</h4>
+              <h6 className="card-text">Rs. {shortstrouser[1].price}</h6>
             </div>
           </div>
         </div>
         <div className="inner">
           <div className="content">
             <img
-              src={jeans[2].url}
+              src={shortstrouser[2].url}
               className="card-img-top"
               alt="..."
             />
             <div className="card-body">
-              <h4 className="card-title" style={{textAlign:"start"}}>{jeans[2].title}</h4>
-              <h6 className="card-text">Rs. {jeans[2].price}</h6>
+              <h4 className="card-title" style={{textAlign:"start"}}>{shortstrouser[2].title}</h4>
+              <h6 className="card-text">Rs. {shortstrouser[2].price}</h6>
             </div>
           </div>
         </div>
         <div className="inner">
           <div className="content">
             <img
-              src={jeans[3].url}
+              src={shortstrouser[3].url}
               className="card-img-top"
               alt="..."
             />
             <div className="card-body">
-              <h4 className="card-title" style={{textAlign:"start"}}>{jeans[3].title}</h4>
-              <h6 className="card-text">Rs. {jeans[3].price}</h6>
+              <h4 className="card-title" style={{textAlign:"start"}}>{shortstrouser[3].title}</h4>
+              <h6 className="card-text">Rs. {shortstrouser[3].price}</h6>
             </div>
           </div>
         </div>
         <div className="inner">
           <div className="content">
             <img
-              src={jeans[4].url}
+              src={shortstrouser[4].url}
               className="card-img-top"
               alt="..."
             />
             <div className="card-body">
-              <h4 className="card-title" style={{textAlign:"start"}}>{jeans[4].title}</h4>
-              <h6 className="card-text">Rs. {jeans[4].price}</h6>
+              <h4 className="card-title" style={{textAlign:"start"}}>{shortstrouser[4].title}</h4>
+              <h6 className="card-text">Rs. {shortstrouser[4].price}</h6>
             </div>
           </div>
         </div>
