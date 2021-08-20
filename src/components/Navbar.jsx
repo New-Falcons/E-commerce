@@ -28,22 +28,16 @@ export const Navbar = () => {
                 Home
               </a>
             </li> */}
+            <Link to="/men">
+              <li className="nav-item">MEN</li>
+            </Link>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#Link">
-                MEN
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#Link">
-                WOMEN
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#Link">
-                KIDS
-              </a>
-            </li>
+            <Link to="/women">
+              <li className="nav-item">WOMEN</li>
+            </Link>
+            <Link to="/kids">
+              <li className="nav-item">KIDS</li>
+            </Link>
           </ul>
           <form className="d-flex">
             <input
