@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Navbar } from './components/Navbar';
 import { Slider } from './components/Slideshow';
@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <h2 className="mainhead">Free shipping for you till mid night</h2>
+      {/* <h2 className="mainhead">Free shipping for you till mid night</h2> */}
       <Slider />
       <Category />
       <Shirts />
