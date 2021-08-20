@@ -2,7 +2,7 @@
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { Navbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Home from "./components/HomePage";
 import Cart from "./components/cart/Cart";
 import Product from "./components/Product";
@@ -16,7 +16,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="App">
         <Navbar />
         {/* <h2 className="mainhead">Free shipping for you till mid night</h2> */}
         <Switch>

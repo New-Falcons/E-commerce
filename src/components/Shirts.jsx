@@ -7,7 +7,7 @@ export const Shirts = () => {
     <div>
       <h1 className="head">Shirts</h1>
       <div className="cardone">
-        {shirts.map((product) => (
+        {shirtsfive.map((product) => (
           <div className="inner">
             <Link to={`/product/${parseInt(product.id)}`}>
               <div className="content">

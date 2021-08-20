@@ -26,12 +26,12 @@ const Product = () => {
       <div className="row1">
         <div className="col-5">
           <div className="product-img">
-            <img src={product.image} alt="" />
+            <img src={product.url} alt="" />
           </div>
         </div>
         <div className="col-6 pd-l">
-          <div className="p-company">Nike</div>
-          <div className="p-name">{product.name}</div>
+          <div className="p-company">{product.title}</div>
+          <div className="p-name">{product.description}</div>
           <div className="p-price">Rs. {product.price}</div>
           <div className="xyz">inclusive of all taxes</div>
           <div className="review-rating">

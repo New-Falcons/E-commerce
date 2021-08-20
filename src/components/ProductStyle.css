@@ -1,5 +1,13 @@
 
 
+.col-5{
+	width: 41.6666667vw;
+}
+
+.col-6 {
+	width: 50vw;
+}
+
 
 .product-container {
   width: 90vw;
@@ -97,7 +105,7 @@
   height: 50px;
   background-color: #ff3e6c;
   color: white;
-  padding-top: 15px;
+  padding-top: 10px;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 500;
