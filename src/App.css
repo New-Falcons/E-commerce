@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .mainhead {
   margin: 1rem;
   text-align: center;
   font-size: 1.5rem;
 }
-
-.navbar-brand {
-  font-size: x-large;
-  font-weight: 4rem;
+.nav {
+  box-shadow: 0px 1px 5px 0.5px;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  top: 0;
 }
 .container {
   margin: auto;
@@ -18,12 +26,17 @@
 }
 
 .cat {
+  display: flex;
   margin: 0;
   padding: 0;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .slide {
-  margin-top: 2rem;
+  margin-top: 80px;
 }
 .head {
   margin-top: 6rem;
@@ -40,8 +53,40 @@
   height: 100;
 }
 .deep {
-  height: 400%;
-  width: 400%;
+  height: 200px;
+  width: 200px;
   display: block;
   border-radius: 50%;
+  background-position: center;
+}
+.icon {
+  font-family: 'Fredoka One', cursive;
+}
+.card-title {
+  width: 150px;
+  text-align: center;
+}
+.profile {
+  /* justify-content: space-around; */
+  display: flex;
+  padding: 10px 30px;
+  justify-content: space-between;
+}
+.profile i {
+  padding-inline: 15px;
+  font-size: 2rem;
+}
+.card-body {
+  transition: all ease 0.3s;
+}
+.inner:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 10px 0.5px;
+  border-radius: 5px;
+}
+.inner {
+  cursor: pointer;
+  transition: all ease 0.3s;
+  border-radius: 5px;
+  background-color: rgb(246, 245, 248);
 }

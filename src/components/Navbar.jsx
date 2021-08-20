@@ -1,12 +1,12 @@
 export const Navbar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light "
-      style={{ backgroundColor: 'rgb(36, 189, 228)' }}
+      className="navbar navbar-expand-lg navbar-light nav"
+      style={{ backgroundColor: 'rgb(255, 255, 255)' }}
     >
       <div className="container-fluid ">
-        <a className="navbar-brand" href="#Nav">
-          Falcon-Store
+        <a className="navbar-brand icon" href="#Nav" >
+          STORE-360
         </a>
         <button
           className="navbar-toggler"
@@ -21,25 +21,25 @@ export const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#Home">
                 Home
               </a>
-            </li>
+            </li> */}
 
             <li className="nav-item">
               <a className="nav-link" href="#Link">
-                kids
+                MEN
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#Link">
-                Women
+                WOMEN
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#Link">
-                Men
+                KIDS
               </a>
             </li>
           </ul>
@@ -53,6 +53,10 @@ export const Navbar = () => {
             <button className="btn btn-outline-success" type="submit">
               Search
             </button>
+            <div className="profile">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
           </form>
         </div>
       </div>
