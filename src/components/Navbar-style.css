@@ -13,6 +13,14 @@
   
 }
 
+
+.search-container button{
+  /* background: transparent; */
+  height: auto;
+  width: 30px;
+}
+
+
 .heading{
     color: white;
 }

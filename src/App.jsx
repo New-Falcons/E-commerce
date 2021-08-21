@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Cart from "./components/cart/Cart";
 import Home from "./components/Homepage";
 import Product from "./components/Product";
+import SearchPage from "./components/SearchPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/cart" component={Cart} />
+          <Route exact path="/search" component={SearchPage} />
           <Route exact path="/product/:id" component={Product} />
         </Switch>
       </div>

@@ -1,7 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "./Navbar-style.css";
+import Search from "./Search"
 
 const Navbar = () => {
   const { cartProducts } = useSelector((state) => state.cartReducer);
@@ -10,6 +11,9 @@ const Navbar = () => {
       <Link to="/">
         <h2 className="heading">FlipKart</h2>
       </Link>
+
+      <Search />
+
       <Link to="/cart">
         <div className="navbar-cart">
           <img

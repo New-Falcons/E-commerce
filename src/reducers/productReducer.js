@@ -112,6 +112,7 @@ const initState = {
     },
   ],
   product: {},
+  filteredProducts:[],
 };
 const productReducer = (state = initState, action) => {
   switch (action.type) {
@@ -121,6 +122,23 @@ const productReducer = (state = initState, action) => {
         product: state.products.find(
           (product) => product.id === parseInt(action.id)
         ),
+      };
+
+    case "SEARCH":
+      // eslint-disable-next-line
+      const filterProducts = state.products.filter((product) => {
+        if (
+          // product.tags.toLowerCase().includes(search) ||
+          product.name.toLowerCase().includes(action.payload)
+          // product.category.toLowerCase().includes(search)
+        ) {
+          return product;
+        }
+      });
+      console.log(filterProducts);
+      return {
+        ...state,
+        filteredProducts: filterProducts,
       };
     default:
       return state;
