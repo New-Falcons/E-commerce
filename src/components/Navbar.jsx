@@ -8,7 +8,7 @@ const Navbar = () => {
     >
       <div className="container-fluid">
         <Link to="/">
-          <h2 className="icon">NFT-Store🌐</h2>
+          <h2 className="icon">ST🌐RE</h2>
         </Link>
         <button
           className="navbar-toggler navbtn"
@@ -23,7 +23,6 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            
             <Link to="/men">
               <li className="nav-item">MEN</li>
             </Link>
