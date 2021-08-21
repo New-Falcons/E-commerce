@@ -5,7 +5,7 @@ export const Shirts = () => {
   const shirtsfive = [shirts[0], shirts[1], shirts[2], shirts[3], shirts[4]];
   return (
     <div>
-      <h1 className="head">Shirts</h1>
+      <h1 className="head" id="shirts">Shirts</h1>
       <div className="cardone">
         {shirtsfive.map((product) => (
           <div className="inner">
