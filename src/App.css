@@ -147,10 +147,11 @@ Link {
   /* height: 100vh; */
   flex-wrap: wrap;
   margin-bottom: 10px;
+  justify-content: center;
 }
 
 .CC {
-  height: 500px;
+  height: 480px;
   width: 280px;
 }
 .CC img {
