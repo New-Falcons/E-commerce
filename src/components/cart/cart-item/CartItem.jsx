@@ -10,14 +10,14 @@ const CartItem = ({ item }) => {
     <div className="cartItem">
       <div className="details">
         <div className="image">
-          <img src={item.image} alt={item.title} />
+          <img src={item.url} alt={item.title} />
         </div>
         <div className="desc">
           <Link to={`/product/${item.id}`}>
-            <div className="title">{item.name}</div>
+            <div className="title">{item.title}</div>
           </Link>
-          <div className="size">Size: {item.size}</div>
-          <div className="price">? {item.price * item.quantity}</div>
+          <div className="size">{item.description}</div>
+          <div className="price">₹ {item.price * item.quantity}</div>
         </div>
       </div>
       <div className="qty-row">

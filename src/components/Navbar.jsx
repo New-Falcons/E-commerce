@@ -11,7 +11,7 @@ const Navbar = () => {
           <h2 className="icon">NFT-Store🌐</h2>
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler navbtn"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
