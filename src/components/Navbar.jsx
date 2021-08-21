@@ -1,11 +1,14 @@
+// import { useState, useEffect } from 'react';
+
 export const Navbar = () => {
+  // const [dark, setDark] = useState(false);
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light nav"
       style={{ backgroundColor: 'rgb(255, 255, 255)' }}
     >
       <div className="container-fluid ">
-        <a className="navbar-brand icon" href="#Nav" >
+        <a className="navbar-brand icon" href="#Nav">
           STORE-360
         </a>
         <button
@@ -53,9 +56,17 @@ export const Navbar = () => {
             <button className="btn btn-outline-success" type="submit">
               Search
             </button>
-            <div className="profile">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <i class="fa fa-user" aria-hidden="true"></i>
+            <div className="profile ">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <i class="fa fa-user" aria-hidden="true"></i>
+              {/* <div className={dark ? 'Navbar dark-mode' : 'Navbar'}>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" onChange={() => setDark(!dark)} />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div> */}
             </div>
           </form>
         </div>
