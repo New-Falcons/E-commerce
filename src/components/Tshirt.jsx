@@ -4,9 +4,9 @@ export const Tshirts = () => {
   return (
     <div id="tshirts">
       <h1 className="head">T-shirts</h1>
-      <div className="cardone">
+      <div className="cardone main-Content">
         {tshirts.map((product) => (
-          <div className="inner">
+          <div className="inner CC">
             <Link
               to={`/product/${parseInt(product.id)}`}
               style={{ textDecoration: "none", color: "black" }}

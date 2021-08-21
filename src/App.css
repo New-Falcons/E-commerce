@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -20,14 +19,14 @@ body {
 .nav {
   box-shadow: 0 4px 12px 3px rgb(0 0 0 / 5%);
   /* box-shadow: 0px 1px 3px 1px; */
-  position: sticky;
+  position: fixed;
   width: 100vw;
   z-index: 999;
   top: 0;
 }
 .d-flex {
   margin: 0.3rem;
-      padding-top: 7px;
+  padding-top: 7px;
 }
 .d-flex input {
   width: 400px;
@@ -108,12 +107,11 @@ body {
   font-size: 1.6rem;
 }
 
-
-.cartdiv{
+.cartdiv {
   width: 45px;
 }
 
-.usericon{
+.usericon {
   margin: 0px 25px;
   padding-top: 4px;
 }
@@ -147,21 +145,20 @@ Link {
   font-size: 1.3rem;
 }
 
-
-.navbtn{
+.navbtn {
   margin-right: 5px;
 }
 
-.search-btn{
+.search-btn {
   margin-right: 20px;
 }
-
 
 .men,
 .women,
 .kids {
   height: 100vh;
   width: 100vw;
+  margin-top: 100px;
   /* margin: 20px; */
   /* padding-bottom: 10px; */
 }
@@ -183,24 +180,22 @@ Link {
   height: 350px;
 }
 
-
-.item-circle{
-    text-align: center;
-    /* line-height: 18px; */
-    vertical-align: top;
-    padding: 1px 6px;
-    height: 18px;
-    background: #ff3f6c;
-    /* position: relative; */
-    border-radius: 50%;
-    font-size: 12px;
-    color: #fff;
-    /* left: -20px;
+.item-circle {
+  text-align: center;
+  /* line-height: 18px; */
+  vertical-align: top;
+  padding: 1px 6px;
+  height: 18px;
+  background: #ff3f6c;
+  /* position: relative; */
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  /* left: -20px;
     top: -13px; */
-    font-weight: 700;
+  font-weight: 700;
 }
 
-.carticon{
+.carticon {
   padding-top: 4px;
 }
-
