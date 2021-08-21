@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Shoes = () => {
   return (
-    <div>
+    <div id="shoes">
       <h1 className="head">Shoes</h1>
       <div className="cardone">
         {shoes.map((product) => (
