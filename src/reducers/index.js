@@ -5,7 +5,7 @@ import cartReducer from "./cartReducer";
     
 const rootReducer = combineReducers({
   productReducer,
-//   cartReducer
+  cartReducer
 });
 
 export default rootReducer;
