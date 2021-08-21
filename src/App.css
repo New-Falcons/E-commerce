@@ -20,6 +20,17 @@ body {
   z-index: 999;
   top: 0;
 }
+.d-flex {
+  margin: 0.5rem;
+}
+.d-flex input {
+  width: 500px;
+  height: 40px;
+}
+.d-flex button {
+  height: 40px;
+}
+
 .nav-item {
   margin-inline: 25px;
   font-size: 1rem;
@@ -69,6 +80,8 @@ body {
   background-position: center;
 }
 .icon {
+  justify-content: center;
+  /* padding: 1rem; */
   font-family: 'Fredoka One', cursive;
 }
 .card-title {
@@ -83,7 +96,7 @@ body {
 }
 .profile i {
   padding-inline: 15px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .card-body {
   transition: all ease 0.3s;
