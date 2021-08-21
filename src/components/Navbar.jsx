@@ -23,11 +23,7 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {/* <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#Home">
-                Home
-              </a>
-            </li> */}
+            
             <Link to="/men">
               <li className="nav-item">MEN</li>
             </Link>

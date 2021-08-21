@@ -32,7 +32,9 @@ export const Slider = () => {
           <img
             src="https://images-ext-1.discordapp.net/external/5C-IB4zb2juKb-K9hP8pGXFDyWzw3g5_BWlCaFyMQDE/https/assets.myntassets.com/f_webp%2Cw_980%2Cc_limit%2Cfl_progressive%2Cdpr_2.0/assets/images/2021/8/19/e93e4bd7-7a60-4fa9-87cd-54847c8fec481629381866851-Pre-Buzz-Main-Banner_Starts-Midnight.gif?width=1025&height=269"
             className="d-block w-100 "
+            
             alt="..."
+            onClick={()=>{}}
           />
         </div>
         <div className="carousel-item">
