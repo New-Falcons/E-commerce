@@ -4,11 +4,11 @@ const Navbar = () => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light nav"
-      style={{ backgroundColor: 'blueviolet' }}
+      style={{ backgroundColor: 'white' }}
     >
       <div className="container-fluid">
         <Link to="/">
-          <h2 className="icon">Store-360</h2>
+          <h2 className="icon">NFT-Store🌐</h2>
         </Link>
         <button
           className="navbar-toggler navbtn"
