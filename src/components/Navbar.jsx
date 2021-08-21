@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 
 const Navbar = () => {
+  const {cartProducts} = useSelector((state)=> state.cartReducer)
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light nav"
@@ -43,17 +46,18 @@ const Navbar = () => {
             <input
               className="form-control me-2"
               type="search"
-              placeholder="Search"
+              placeholder="Search for products, brands and more"
               aria-label="Search"
             />
-            <button className="btn btn-outline-success" type="submit">
+            <button className="btn btn-outline-primary search-btn" type="submit">
               Search
             </button>
             <div className="profile">
               <Link to="/cart">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <div className="cartdiv"><i class="fa fa-shopping-cart carticon" aria-hidden="true"></i>
+                <span className="item-circle">{cartProducts.length}</span></div>
               </Link>
-              <i class="fa fa-user" aria-hidden="true"></i>
+              <i class="fa fa-user usericon" aria-hidden="true"></i>
             </div>
           </form>
         </div>

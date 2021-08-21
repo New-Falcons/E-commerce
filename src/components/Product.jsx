@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import "./ProductStyle.css";
-// import star from "./images/star-512.png";
-// import cart from "./images/cart.png";
-// import refresh from "./images/refresh.png";
-// import rupee from "./images/rupee.png";
-// import arrow from "./images/arrow.png";
+import star from "./images/star-512.png";
+import cart from "./images/cart.png";
+import refresh from "./images/refresh.png";
+import rupee from "./images/rupee.png";
+import arrow from "./images/arrow.png";
 
 const Product = () => {
   const quantity = 1;
@@ -38,7 +38,7 @@ const Product = () => {
             <span>
               <div className="star">
                 4.7
-                {/* <img src={star} alt="" /> */}
+                <img src={star} alt="" />
               </div>
             </span>
             <span className="num">15728 ratings and 3491 reviews</span>
@@ -49,7 +49,7 @@ const Product = () => {
                 <button>
                   <div className="go">Go To Cart</div>
                   <div>
-                    {/* <img src={arrow} alt="" /> */}
+                    <img src={arrow} alt="" />
                   </div>
                 </button>
               </Link>
@@ -64,7 +64,7 @@ const Product = () => {
                 }}
               >
                 <div>
-                  {/* <img src={cart} alt="" /> */}
+                  <img src={cart} alt="" />
                 </div>
                 <div className="add">Add To Cart</div>
               </button>
@@ -76,19 +76,19 @@ const Product = () => {
               <span>
                 <div className="rating">
                   4.5
-                  {/* <img src={star} alt="" /> */}
+                  <img src={star} alt="" />
                 </div>
               </span>
             </div>
             <div className="return">
               <span>
-                {/* <img src={refresh} alt="" /> */}
+                <img src={refresh} alt="" />
               </span>
               <span>30 Day Return Policy</span>
             </div>
             <div className="cod">
               <span>
-                {/* <img src={rupee} alt="" /> */}
+                <img src={rupee} alt="" />
               </span>
               <span>Cash on Delivery Available</span>
             </div>

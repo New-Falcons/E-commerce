@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import CartItem from "./cart-item/CartItem";
 import "./Cart-style.css";
-// import location from "../images/location.png";
-// import check from "../images/check.png";
-// import cancel from "../images/cancel.png";
+import location from "../images/location.png";
+import check from "../images/check.png";
+import cancel from "../images/cancel.png";
 
 const Cart = () => {
   const { cartProducts, totalQuantities, totalPrice } = useSelector(
@@ -22,7 +22,7 @@ const Cart = () => {
             <div className="my-cart">My Cart ({cartProducts.length})</div>
             <div className="add-div">
               <div className="add-heading">
-                <div>{/* <img src={location} alt="" /> */}</div>
+                <div><img src={location} alt="" /></div>
                 <div>Deliver to</div>
               </div>
               <div className="address">
@@ -30,7 +30,7 @@ const Cart = () => {
                   <div className="inner-add">
                     <div className="pin">
                       {pin}
-                      {/* <img src={pin.length === 6 ? check : cancel} alt="" /> */}
+                      <img src={pin.length === 6 ? check : cancel} alt="" />
                     </div>
                     <div>
                       <button
