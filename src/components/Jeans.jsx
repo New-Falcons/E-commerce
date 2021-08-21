@@ -1,10 +1,30 @@
-import {jeans} from "../data/db.json"
+import { jeans } from "../data/db.json";
+import { Link } from "react-router-dom";
+
 export const Jeans = () => {
   return (
     <div>
       <h1 className="head">Jeans</h1>
       <div className="cardone">
-        <div className="inner">
+        {jeans.map((product) => (
+          <div className="inner">
+            <Link
+              to={`/product/${parseInt(product.id)}`}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <div className="content">
+                <img src={product.url} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h4 className="card-title" style={{ textAlign: "start" }}>
+                    {product.title}
+                  </h4>
+                  <h6 className="brand-name">Rs. {product.price}</h6>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+        {/* <div className="inner">
           <div className="content">
             <img
               src={jeans[0].url}
@@ -68,7 +88,7 @@ export const Jeans = () => {
               <h6 className="card-text">Rs. {jeans[4].price}</h6>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const Navbar = () => {
       className="navbar navbar-expand-lg navbar-light nav"
       style={{ backgroundColor: "rgb(255, 255, 255)" }}
     >
-      <div className="container-fluid ">
+      <div className="container-fluid">
         <Link to="/">
           <h2 className="icon">Store-360</h2>
         </Link>
