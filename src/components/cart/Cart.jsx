@@ -22,9 +22,7 @@ const Cart = () => {
             <div className="my-cart">My Cart ({cartProducts.length})</div>
             <div className="add-div">
               <div className="add-heading">
-                <div>
-                  {/* <img src={location} alt="" /> */}
-                </div>
+                <div>{/* <img src={location} alt="" /> */}</div>
                 <div>Deliver to</div>
               </div>
               <div className="address">
@@ -91,13 +89,13 @@ const Cart = () => {
               <div className="price-div">
                 <div className="inner-row">
                   <div>Price ({cartProducts.length} items)</div>
-                  <span>? {totalPrice}</span>
+                  <span>₹ {totalPrice}</span>
                 </div>
               </div>
               <div className="discount-div">
                 <div className="inner-row">
                   <div>Discount</div>
-                  <span>-?0</span>
+                  <span>-₹0</span>
                 </div>
               </div>
               <div className="delivery-div">
@@ -109,7 +107,7 @@ const Cart = () => {
               <div className="totalprice-div">
                 <div className="inner-row">
                   <div>Total Amount</div>
-                  <span>? {totalPrice}</span>
+                  <span>₹ {totalPrice}</span>
                 </div>
               </div>
               <div className="place-order-btn">
@@ -117,7 +115,7 @@ const Cart = () => {
                   <div className="btn">Place Order</div>
                 </a>
               </div>
-              <div className="savings">You will save ?0 on this order</div>
+              <div className="savings">You will save ₹0 on this order</div>
             </div>
           </div>
         ) : (

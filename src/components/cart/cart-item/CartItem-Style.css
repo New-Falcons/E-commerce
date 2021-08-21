@@ -7,8 +7,9 @@
 }
 
 .cartItem img{
-  width: 125px;
+  width: auto;
   height: 125px;
+  
 }
 
 .details{
@@ -32,6 +33,7 @@
 .image{
   width: 125px;
   height: 125px;
+  text-align: center;
 }
 
 .title{
@@ -45,6 +47,7 @@
 
 .size{
   color: #867b86;
+  font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -60,39 +63,39 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 5px;
+
 }
 
 .qty button{
     color: black;
     border-color: #e0e0e0;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     background: linear-gradient(#fff,#f9f9f9);
     display: inline-block;
     border: 1px solid #c2c2c2;
     cursor: pointer;
-    font-size: 28px;
     border-radius: 50%;
-    padding-top: 0px;
-    line-height: 1;
+    line-height: 26px;
 }
 
 
 .qty-value{
-  width: 50px;
-  height: 30px;
+  width: 45px;
+  height: 28px;
   border-radius: 2px;
   border: 1px solid #c2c2c2;
   margin: 3px 7px;
   text-align: center;
   font-size: 1.25rem;
-  padding-top: 3px;
+  line-height: 26px;
 }
 
 .qty-row{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 15px;
 }
 
@@ -106,6 +109,7 @@
   background-color: white;
   font-size: 18px;
   text-transform: uppercase;
+  border: 2px;
     font-weight: 500;
     cursor: pointer;
 }
@@ -147,22 +151,34 @@
 @media only screen and (max-width: 500px) {
 
   .image{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 150px;
   }
 
   .details{
-    height: 120px;
+    height: 140px;
   }
 
   .remove-btn {
     margin-left: 20px;
   }
 
+  .desc a {
+    margin-bottom: 0px;
+}
+
+    .desc {
+    padding: 0px 0px 12px 10px;
+}
+
+    .size{
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
 
   .cartItem img{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: auto;
   }
 
 

@@ -14,7 +14,7 @@
 
 .row-y {
   display: flex;
-  flex-direction: row-y;
+  flex-direction: row;
   justify-content: space-between;
   margin: 25px 50px;
 }
@@ -26,9 +26,9 @@
   box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px 0px;
 }
 
-.row-y-inner {
+.row-inner {
   display: flex;
-  flex-direction: row-y;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 2px 0px;
@@ -46,7 +46,7 @@
 .add-div {
   /* padding-left: 130px; */
   display: flex;
-  flex-direction: row-y;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -56,7 +56,7 @@
   font-size: 0.9rem;
   font-weight: 500;
   display: flex;
-  flex-direction: row-y;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -75,17 +75,16 @@
 
 .inner-add {
   display: flex;
-  flex-direction: row-y;
+  flex-direction: row;
 }
 
 .form {
   display: flex;
-  flex-direction: row-y;
+  flex-direction: row;
 }
 
 .address button {
   margin-left: 10px;
-  margin-top: 2px;
   color: #2874f0;
   font-weight: 500;
   background-color: white;
@@ -96,11 +95,11 @@
 }
 
 .input-div input {
-  height: 22px;
+  height: 23px;
   width: 125px;
   border-radius: 3px;
-  padding: 3px 8px;
-  font-size: 1.05rem;
+  padding: 4px 8px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -112,8 +111,9 @@
   width: 125px;
   height: 22px;
   border-radius: 2px;
-  padding-top: 1px;
+  line-height: 20px;
   border: 1px solid grey;
+  text-align: center;
 }
 
 .inner-add img {
@@ -148,9 +148,9 @@
   padding: 0px 24px;
 }
 
-.inner-row-y {
+.inner-row {
   display: flex;
-  flex-direction: row-y;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -182,7 +182,7 @@
   border-bottom: 1px dashed #e0e0e0;
 }
 
-.totalprice-div .inner-row-y {
+.totalprice-div .inner-row {
   margin: 20px 0px;
 }
 
@@ -196,6 +196,7 @@
 }
 
 .place-order-btn .btn {
+    width: 100%;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
@@ -223,11 +224,12 @@ a {
   height: 200px;
   font-size: x-large;
   padding-top: 50px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 950px) {
 
-  .row-y{
+  .row{
     margin: 20px;
   }
 
@@ -239,6 +241,10 @@ a {
 
 
 @media only screen and (max-width: 768px) {
+
+    /* .container-z{
+        width: 100vw;
+    } */
 
   .row-y{
     display: flex;
@@ -259,7 +265,9 @@ a {
 
 
 @media only screen and (max-width: 500px) {
-  .row-y-inner{
+    
+
+  .row-inner{
     display: flex;
     flex-direction: column;
   }
