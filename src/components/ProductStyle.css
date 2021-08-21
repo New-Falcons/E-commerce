@@ -11,11 +11,10 @@
   margin: 50px auto;
 }
 
-
-
 .product-img img {
   width: 28vw;
   height: auto;
+  padding: 30px;
 }
 
 .pd-l {

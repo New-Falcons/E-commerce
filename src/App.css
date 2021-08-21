@@ -20,6 +20,10 @@ body {
   z-index: 999;
   top: 0;
 }
+.nav-item{
+  margin-inline:20px;
+  font-size: 1.3rem
+}
 .container {
   margin: auto;
   width: 100vw;
