@@ -43,10 +43,26 @@ body {
   font-weight: bold;
   transition: all ease 0.2s;
 }
-
+.nav h2 {
+  transition: all ease-in 0.2s;
+}
+.nav h2:hover {
+  transform: scale(1.1);
+}
 .nav-item:hover {
   transform: scale(1.13);
-  color:rgb(0, 188, 242)
+  color: rgb(0, 188, 242);
+}
+.content p {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: gray;
+  margin-bottom: 7px;
+}
+.content h4 {
+  margin-bottom: 2px;
 }
 .container {
   margin: auto;
