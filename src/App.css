@@ -41,6 +41,12 @@ body {
   margin-inline: 25px;
   font-size: 1rem;
   font-weight: bold;
+  transition: all ease 0.2s;
+}
+
+.nav-item:hover {
+  transform: scale(1.13);
+  color:rgb(0, 188, 242)
 }
 .container {
   margin: auto;
@@ -62,7 +68,7 @@ body {
 }
 
 .slide {
-  margin-top: 80px;
+  margin-top: 150px;
 }
 .head {
   margin-top: 6rem;
@@ -105,10 +111,15 @@ body {
 .profile i {
   /* padding-inline: 15px; */
   font-size: 1.6rem;
+  color: rgb(0, 188, 242);
+}
+.cartdiv:hover {
+  transform: scale(1.13);
 }
 
 .cartdiv {
   width: 45px;
+  transition: all ease 0.2s;
 }
 
 .usericon {
