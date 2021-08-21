@@ -117,6 +117,7 @@ body {
   text-decoration: none;
   color: black;
 }
+
 Link {
   text-decoration: none;
   color: black;
@@ -128,5 +129,5 @@ Link {
 
 
 .navbtn{
-  margin-right: 15px;
+  margin-right: 5px;
 }
