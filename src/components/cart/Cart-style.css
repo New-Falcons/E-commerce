@@ -147,6 +147,10 @@
 .desc-div {
   padding: 0px 24px;
 }
+.desc a {
+  text-decoration: none;
+  color: black;
+}
 
 .inner-row {
   display: flex;
