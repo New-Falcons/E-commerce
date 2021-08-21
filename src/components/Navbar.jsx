@@ -1,16 +1,15 @@
-// import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-export const Navbar = () => {
-  // const [dark, setDark] = useState(false);
+const Navbar = () => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light nav"
       style={{ backgroundColor: 'rgb(255, 255, 255)' }}
     >
-      <div className="container-fluid ">
-        <a className="navbar-brand icon" href="#Nav">
-          STORE-360
-        </a>
+      <div className="container-fluid">
+        <Link to="/">
+          <h2 className="icon">Store-360</h2>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -29,22 +28,16 @@ export const Navbar = () => {
                 Home
               </a>
             </li> */}
+            <Link to="/men">
+              <li className="nav-item">MEN</li>
+            </Link>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#Link">
-                MEN
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#Link">
-                WOMEN
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#Link">
-                KIDS
-              </a>
-            </li>
+            <Link to="/women">
+              <li className="nav-item">WOMEN</li>
+            </Link>
+            <Link to="/kids">
+              <li className="nav-item">KIDS</li>
+            </Link>
           </ul>
           <form className="d-flex">
             <input
@@ -56,17 +49,11 @@ export const Navbar = () => {
             <button className="btn btn-outline-success" type="submit">
               Search
             </button>
-            <div className="profile ">
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <div className="profile">
+              <Link to="/cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </Link>
               <i class="fa fa-user" aria-hidden="true"></i>
-              {/* <div className={dark ? 'Navbar dark-mode' : 'Navbar'}>
-                <div>
-                  <label class="switch">
-                    <input type="checkbox" onChange={() => setDark(!dark)} />
-                    <span class="slider round"></span>
-                  </label>
-                </div>
-              </div> */}
             </div>
           </form>
         </div>
@@ -74,3 +61,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
