@@ -2,7 +2,7 @@ import { tshirts } from "../data/db.json";
 import { Link } from "react-router-dom";
 export const Tshirts = () => {
   return (
-    <div>
+    <div id="tshirts">
       <h1 className="head">T-shirts</h1>
       <div className="cardone">
         {tshirts.map((product) => (
