@@ -57,7 +57,7 @@ const Navbar = () => {
             />
             <Link to="/search">
             <button
-              className="btn btn-outline-primary search-btn"
+              className="btn btn-outline-info search-btn"
               type="submit"
             >
               Search
