@@ -18,7 +18,7 @@ body {
   font-size: 1.5rem;
 }
 .nav {
-  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);
+  box-shadow: 0 4px 12px 3px rgb(0 0 0 / 5%);
   /* box-shadow: 0px 1px 3px 1px; */
   position: sticky;
   width: 100vw;
@@ -94,7 +94,7 @@ body {
   font-family: "Fredoka One", cursive;
 }
 .card-title {
-  width: 150px;
+  width: 200px;
   text-align: center;
 }
 .profile {

@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector,useDispatch } from 'react-redux';
 
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+  let val = "";
   const {cartProducts} = useSelector((state)=> state.cartReducer)
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light nav"
-      style={{ backgroundColor: 'white' }}
+      style={{ backgroundColor: "white" }}
     >
       <div className="container-fluid">
         <Link to="/">
@@ -43,14 +45,33 @@ const Navbar = () => {
               type="search"
               placeholder="Search for products, brands and more"
               aria-label="Search"
+              onChange={(e) => {
+                val = e.target.value.toLowerCase();
+                console.log(val);
+
+                dispatch({
+                  type: "SEARCH",
+                  payload: val,
+                });
+              }}
             />
-            <button className="btn btn-outline-primary search-btn" type="submit">
+            <Link to="/search">
+            <button
+              className="btn btn-outline-primary search-btn"
+              type="submit"
+            >
               Search
             </button>
+            </Link>
             <div className="profile">
               <Link to="/cart">
-                <div className="cartdiv"><i class="fa fa-shopping-cart carticon" aria-hidden="true"></i>
-                <span className="item-circle">{cartProducts.length}</span></div>
+                <div className="cartdiv">
+                  <i
+                    class="fa fa-shopping-cart carticon"
+                    aria-hidden="true"
+                  ></i>
+                  <span className="item-circle">{cartProducts.length}</span>
+                </div>
               </Link>
               <i class="fa fa-user usericon" aria-hidden="true"></i>
             </div>

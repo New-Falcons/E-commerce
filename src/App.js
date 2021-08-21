@@ -9,8 +9,8 @@ import Product from './components/Product';
 import MenSection from './components/MenSection';
 import WomenSection from './components/WomenSection';
 import KidsSection from './components/KidsSection';
-
 import './App.css';
+import SearchPage from './components/SearchPage';
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
           <Route exact path="/men" component={MenSection} />
           <Route exact path="/women" component={WomenSection} />
           <Route exact path="/kids" component={KidsSection} />
+          <Route exact path="/search" component={SearchPage} />
         </Switch>
       </div>
     </Router>

@@ -503,7 +503,7 @@ const initialState = {
       id: "55",
       title: "ADIDAS",
       price: "4299",
-      description: "Men Woven Fluidglow Running",
+      description: "Men Woven Fluidglow Running Shoes",
       size: "M",
       quantity: 1,
       url: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14782094/2021/8/9/17b1f6fc-1ae4-476a-86b4-18e233ee0faa1628509005335-Adidas-Men-Grey-Woven-Design-Fluidglow-M-Running-Shoes-93816-1.jpg",
