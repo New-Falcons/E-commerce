@@ -117,6 +117,7 @@ body {
   text-decoration: none;
   color: black;
 }
+
 Link {
   text-decoration: none;
   color: black;
@@ -125,6 +126,12 @@ Link {
 .profile .text {
   font-size: 1.3rem;
 }
+
+
+.navbtn{
+  margin-right: 5px;
+}
+
 .men,
 .women,
 .kids {
@@ -133,6 +140,7 @@ Link {
   /* margin: 20px; */
   /* padding-bottom: 10px; */
 }
+
 .main-Content {
   display: flex;
   width: 100%;
@@ -141,6 +149,7 @@ Link {
   margin-bottom: 10px;
   justify-content: center;
 }
+
 .CC {
   height: 480px;
   width: 280px;
