@@ -1,18 +1,32 @@
-import React, { useState } from "react";
+import React, {useState,useEffect,useContext} from "react";
 import { useSelector } from "react-redux";
 import CartItem from "./cart-item/CartItem";
 import "./Cart-style.css";
-import location from "../images/location.png";
-import check from "../images/check.png";
-import cancel from "../images/cancel.png";
+
+// import location from "../images/location.png";
+// import check from "../images/check.png";
+// import cancel from "../images/cancel.png";
 
 const Cart = () => {
   const { cartProducts, totalQuantities, totalPrice } = useSelector(
     (state) => state.cartReducer
   );
 
-  const [pin, setPin] = useState("");
-  const [isPinEntered, setIsPinEntered] = useState(false);
+  // let parsedCart = cartProducts;
+
+  // useEffect(()=>{
+  //   parsedCart = localStorage.getItem("productsincart")
+
+  // }, [])
+
+
+  // useEffect(()=>{
+  //   localStorage.setItem("productsincart", cartProducts)
+  // }, [cartProducts])
+
+
+  // const [pin, setPin] = useState("");
+  // const [isPinEntered, setIsPinEntered] = useState(false);
   console.log(totalQuantities);
   return (
     <div className="container-z">
@@ -20,7 +34,7 @@ const Cart = () => {
         <div className="column1">
           <div className="row-inner">
             <div className="my-cart">My Cart ({cartProducts.length})</div>
-            <div className="add-div">
+            {/* <div className="add-div">
               <div className="add-heading">
                 <div><img src={location} alt="" /></div>
                 <div>Deliver to</div>
@@ -65,7 +79,7 @@ const Cart = () => {
                   </div>
                 )}
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="items">
             <div className="item-row">
