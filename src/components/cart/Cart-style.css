@@ -147,6 +147,10 @@
 .desc-div {
   padding: 0px 24px;
 }
+.desc a {
+  text-decoration: none;
+  color: black;
+}
 
 .inner-row {
   display: flex;
@@ -196,22 +200,23 @@
 }
 
 .place-order-btn .btn {
-    width: 100%;
+  width: 100%;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
   padding: 12px;
-  background: #ff3f6c;
+  background: rgb(0, 188, 242);
   cursor: pointer;
   text-align: center;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
   letter-spacing: 0.75px;
+  transition: all ease 0.3s;
 }
 
-.place-order-btn .btn:hover{
-  background: #fa5a80;
+.place-order-btn .btn:hover {
+  background: rgb(4, 169, 214);
 }
 
 a {
@@ -228,62 +233,53 @@ a {
 }
 
 @media only screen and (max-width: 950px) {
-
-  .row{
+  .row {
     margin: 20px;
   }
 
-  .column2{
+  .column2 {
     width: 35vw;
   }
-  
 }
 
-
 @media only screen and (max-width: 768px) {
-
-    /* .container-z{
+  /* .container-z{
         width: 100vw;
     } */
 
-  .row-y{
+  .row-y {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .column1{
+  .column1 {
     width: 90vw;
   }
 
-  .column2{
+  .column2 {
     width: 70vw;
     margin-top: 40px;
   }
 }
 
-
 @media only screen and (max-width: 500px) {
-    
-
-  .row-inner{
+  .row-inner {
     display: flex;
     flex-direction: column;
   }
 
-  .my-cart{
+  .my-cart {
     width: 90vw;
     padding: 10px 15px;
   }
 
-  .column2{
+  .column2 {
     width: 80vw;
   }
 
-  .add-div{
+  .add-div {
     margin-bottom: 5px;
   }
 }
-
-

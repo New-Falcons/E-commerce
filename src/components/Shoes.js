@@ -18,7 +18,9 @@ export const Shoes = () => {
                   <h4 className="card-title" style={{ textAlign: "start" }}>
                     {product.title}
                   </h4>
+                  <p className="brand-name">{product.description}</p>
                   <h6 className="brand-name">Rs. {product.price}</h6>
+                  
                 </div>
               </div>
             </Link>
