@@ -136,11 +136,37 @@ body {
 .cartdiv {
   width: 45px;
   transition: all ease 0.2s;
+  position: relative;
 }
+
+
+.item-circle {
+  position: absolute;
+  left: 15px;
+  top:-5px;
+  z-index:1000;
+  text-align: center;
+  vertical-align: top;
+  padding: 0px 6px;
+  height: 18px;
+  background: #ff3f6c;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* .carticon {
+  padding-top: 4px;
+}
+ */
+
+
+
 
 .usericon {
   margin: 0px 25px;
-  padding-top: 4px;
+  /* padding-top: 4px; */
 }
 
 .card-body {
@@ -207,22 +233,4 @@ Link {
   height: 350px;
 }
 
-.item-circle {
-  text-align: center;
-  /* line-height: 18px; */
-  vertical-align: top;
-  padding: 1px 6px;
-  height: 18px;
-  background: #ff3f6c;
-  /* position: relative; */
-  border-radius: 50%;
-  font-size: 12px;
-  color: #fff;
-  /* left: -20px;
-    top: -13px; */
-  font-weight: 700;
-}
 
-.carticon {
-  padding-top: 4px;
-}

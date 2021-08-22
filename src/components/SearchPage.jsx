@@ -6,7 +6,7 @@ const SearchPage = () => {
 
   if (filteredProducts.length === 0)
     return (
-      <div style={{ textAlign: "center", paddingTop: 100 }}>
+      <div style={{ textAlign: "center", paddingTop: 120 }}>
         <h1>We couldn't find any matches!</h1>
         <p style={{ color: "grey", marginBlock: "20px", fontSize: "18px" }}>
           Please check the spelling or try searching something else
@@ -32,6 +32,7 @@ const SearchPage = () => {
                   <h4 className="card-title" style={{ textAlign: "start" }}>
                     {product.title}
                   </h4>
+                  <p className="brand-name">{product.description}</p>
                   <h6 className="brand-name">Rs. {product.price}</h6>
                 </div>
               </div>
