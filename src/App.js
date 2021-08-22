@@ -1,5 +1,6 @@
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+// import { useEffect } from "react";
+// import { useSelector } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
