@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import "./ProductStyle.css";
-import star from "./images/star-512.png";
-import cart from "./images/cart.png";
-import refresh from "./images/refresh.png";
-import rupee from "./images/rupee.png";
-import arrow from "./images/arrow.png";
+import React, { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import './ProductStyle.css';
+import star from './images/star-512.png';
+import cart from './images/cart.png';
+import refresh from './images/refresh.png';
+import rupee from './images/rupee.png';
+import arrow from './images/arrow.png';
 
 const Product = () => {
   const quantity = 1;
@@ -17,7 +17,7 @@ const Product = () => {
   const { product } = useSelector((state) => state.productReducer);
 
   useEffect(() => {
-    dispatch({ type: "PRODUCT", id });
+    dispatch({ type: 'PRODUCT', id });
     // eslint-disable-next-line
   }, [id]);
 
@@ -58,7 +58,7 @@ const Product = () => {
                 onClick={() => {
                   setIsClicked(!isClicked);
                   dispatch({
-                    type: "ADD_TO_CART",
+                    type: 'ADD_TO_CART',
                     payload: { product, quantity },
                   });
                 }}
