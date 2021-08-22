@@ -121,7 +121,7 @@ body {
 .profile {
   /* justify-content: space-around; */
   display: flex;
-  padding: 10px 30px;
+  padding: 10px 10px 10px 30px;
   justify-content: space-between;
 }
 .profile i {

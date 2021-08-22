@@ -8,7 +8,7 @@
 
 .product-container {
   width: 90vw;
-  margin: 100px auto;
+  margin: 120px auto;
 }
 
 .product-container img,
@@ -262,7 +262,7 @@ svg {
 @media only screen and (max-width: 720px) {
   .product-container {
     width: 90vw;
-    margin: 5px auto;
+    margin: 40px auto;
   }
 
   .row1 {
