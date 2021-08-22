@@ -12,7 +12,8 @@ const SearchPage = () => {
           Please check the spelling or try searching something else
         </p>
         <div style={{ marginTop: "50px" }}>
-          <img src="https://constant.myntassets.com/web/assets/img/11488523304066-search404.png"></img>
+        {/* eslint-disable-next-line */}
+          <img src="https://constant.myntassets.com/web/assets/img/11488523304066-search404.png" ></img>
         </div>
       </div>
     );
