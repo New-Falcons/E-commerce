@@ -136,6 +136,10 @@ const Cart = () => {
           ""
         )}
       </div>
+
+    <div className="footer1"> <div className="content2"> <div className="images3"> <img className="footer-bank-ssl" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png" /> <img className="footer-bank-visa" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"/> <img className="footer-bank-mc" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"/> <img className="footer-bank-nb" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"/> <img className="footer-bank-cod" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"/> <img className="footer-bank-rupay" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"/> <img className="footer-bank-paypal" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"/> <img className="footer-bank-bhim" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"/> </div> <a href="#" className="contact-us"> <span>Need Help ? Contact Us</span> </a> </div></div>
+
+
     </div>
   );
 };
