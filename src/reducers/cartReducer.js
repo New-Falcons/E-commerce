@@ -17,17 +17,17 @@ for (let i = 0; i < productsFromLocalStorage.length; i++) {
 //   localStorage.getItem("recentOrder") || "[]"
 // );
 
-var ordersFromLocalStorage = JSON.parse(
+const ordersFromLocalStorage = JSON.parse(
   localStorage.getItem("recentOrder") || "[]"
 );
+console.log(ordersFromLocalStorage);
 
 
-
-var myOrder2 = JSON.parse(
-  localStorage.getItem("myOrders1") || "[]"
+const myOrder2 = JSON.parse(
+  localStorage.getItem("Myorders1") || "[]"
 );
 
-
+console.log(myOrder2);
 
 const initialState = {
   products: [
@@ -618,10 +618,8 @@ const cartReducer = (state = initialState, action) => {
       };
     case "EMPTY_CART":
       const newOrder = state.cartProducts
-      console.log(newOrder)
       const a = state.myOrders
       a.push(newOrder)
-      console.log(a)
       localStorage.setItem("Myorders1", JSON.stringify(a));
       return {
         ...state,
