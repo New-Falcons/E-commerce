@@ -269,16 +269,18 @@ Link {
   justify-content: space-between;
   background-color: rgb(246, 245, 248);
   border-radius: 20px;
+  cursor: pointer;
 }
 .Content .Order {
   display: flex;
   justify-content: space-around;
   width: 500px;
   height: 300px;
-
 }
 .Order img {
   padding: 30px;
+  height: 280px;
+  /* margin-top: 15px; */
 }
 .titles {
   max-width: 500px;
@@ -326,18 +328,17 @@ Link {
   }
 }
 
-
-.temp{
-	padding: 20px 0px;
+.temp {
+  padding: 20px 0px;
 }
 
 .product__img img {
-	width: 200px;
-	height: auto;
-	transition: all 0.5s linear;
+  width: 200px;
+  height: auto;
+  transition: all 0.5s linear;
 }
 
-.product__name{
-	text-transform: capitalize;
-	font-weight: 500;
+.product__name {
+  text-transform: capitalize;
+  font-weight: 500;
 }
