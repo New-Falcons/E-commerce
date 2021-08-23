@@ -294,6 +294,22 @@ Link {
 .userProfile i {
   margin: 0 5px;
 }
+.orderone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 50px 0; */
+}
+.orderone hr {
+  margin: 70px 0;
+}
+.Orders .line1 {
+  margin-bottom: 50px;
+}
+.ORDER {
+  background-color: rgb(246, 245, 248);
+}
 /* ---------------------------------------- */
 @media screen and (max-width: 1050px) {
   nav h2 {
@@ -307,14 +323,33 @@ Link {
     color: rgb(0, 188, 242);
     transform: none;
   }
+  .Head h1 {
+    font-size: 2rem;
+  }
+  .Head h4 {
+    font-size: 1.2rem;
+  }
+  .Head {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Orders hr {
+    width: 700px;
+  }
+  .Head {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+  }
 }
 @media screen and (max-width: 570px) {
-
-.navbar-collapse {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-start;
-}
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 
   .d-flex input {
     width: 305px;
@@ -332,45 +367,53 @@ Link {
     padding: 5px 0;
   } */
 
-  .nav-item{
+  .nav-item {
     margin-inline: 10px;
   }
 
-  
   .Search {
     padding-top: 300px;
   }
+  .Head {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+  .Head h1 {
+    font-size: 1.5rem;
+  }
+  .Head h4 {
+    font-size: 1rem;
+  }
 }
 
-
-@media screen and (max-width: 480px){
-  .d-flex input{
+@media screen and (max-width: 480px) {
+  .d-flex input {
     width: 200px;
   }
 }
 
-
-@media screen and (max-width: 380px){
-  .usericon{
+@media screen and (max-width: 380px) {
+  .usericon {
     margin: 0px 10px;
   }
 }
 
-@media screen and (max-width: 360px){
-  .profile{
+@media screen and (max-width: 360px) {
+  .profile {
     padding: 10px;
   }
 }
 
-@media screen and (max-width: 340px){
-  .d-flex input{
+@media screen and (max-width: 340px) {
+  .d-flex input {
     width: 150px;
   }
 }
 
-
-.temp{
-	padding: 20px 0px;
+.temp {
+  padding: 20px 0px;
 }
 
 .product__img img {

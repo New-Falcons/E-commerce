@@ -11,7 +11,7 @@ function Orders() {
         <h1>My Orders</h1>
         <h4>View all Your pending orders and delivered Orders.</h4>
       </div>
-      <hr />
+      <hr  className="line1"/>
       <div className="items">
         <div className="item-row">
           {myOrders.length > 0 ? (
@@ -19,7 +19,7 @@ function Orders() {
               {myOrders.map((order) => (
                 <div className="orderone">
                   {order.map((item) => (
-                    <OrderShow key={item.id} item={item} />
+                    <OrderShow key={item.id} item={item} className="orderItem" />
                   ))}
                   <hr />
                 </div>

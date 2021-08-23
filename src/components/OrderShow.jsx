@@ -7,7 +7,7 @@ const OrderShow = ({ item }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="cartItem">
+    <div className="cartItem ORDER">
       <div className="details">
         <div className="image">
           <img src={item.url} alt={item.title} />

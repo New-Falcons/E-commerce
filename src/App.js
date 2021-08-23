@@ -4,7 +4,8 @@ import { useSelector } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Home from "./components/HomePage";
+// import Home from "./components/HomePage";
+import Home from "./components/Homepage";
 import Cart from "./components/cart/Cart";
 import Product from "./components/Product";
 import MenSection from "./components/MenSection";
@@ -15,14 +16,16 @@ import SearchPage from "./components/SearchPage";
 import Orders from "./components/Orders";
 
 function App() {
-  const { cartProducts, totalQuantities } = useSelector(
+  const { cartProducts, totalQuantities, myOrders } = useSelector(
     (state) => state.cartReducer
   );
 
   useEffect(() => {
     localStorage.setItem("productsInCart", JSON.stringify(cartProducts));
   }, [cartProducts, totalQuantities]);
-
+  useEffect(() => {
+    localStorage.setItem("Myorders1", JSON.stringify(myOrders));
+  }, [cartProducts, totalQuantities]);
   // useEffect(() => {
   //   localStorage.setItem("", JSON.stringify(cartProducts));
   // }, []);
