@@ -1,38 +1,271 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+body {
+  overflow-x: hidden;
+}
+.mainhead {
+  margin: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.nav {
+  box-shadow: 0 4px 12px 3px rgb(0 0 0 / 5%);
+  /* box-shadow: 0px 1px 3px 1px; */
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  top: 0;
+}
+.d-flex {
+  margin: 0.3rem;
+  padding-top: 7px;
+}
+.d-flex input {
+  width: 400px;
+  height: 40px;
+  padding-left: 20px;
+}
+.d-flex button {
+  height: 40px;
+}
+
+.nav-item {
+  margin-inline: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all ease 0.2s;
+}
+.nav h2 {
+  transition: all ease-in 0.2s;
+}
+.nav h2:hover {
+  transform: scale(1.1);
+}
+.nav-item:hover {
+  transform: scale(1.13);
+  color: rgb(0, 188, 242);
+}
+.content p {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: gray;
+  margin-bottom: 7px;
+}
+.content h4 {
+  margin-bottom: 2px;
+}
+.container {
+  margin: auto;
+  width: 100vw;
+  display: flex;
+  /* border: 1px solid white; */
+  justify-content: space-around;
+  background: rgb(255, 241, 241);
+}
+
+.cat {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slide {
+  margin-top: 150px;
+}
+.head {
+  margin-top: 6rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+.cardone {
+  margin: 1rem;
+  display: flex;
+}
+.inner {
+  margin: 0.7rem;
+  width: 20%;
+  height: 100;
+}
+.deep {
+  height: 200px;
+  width: 200px;
+  display: block;
+  border-radius: 50%;
+  background-position: center;
+}
+.icon {
+  justify-content: center;
+  margin-right: 50px;
+  margin-bottom: 0px;
+  /* padding: 1rem; */
+  font-family: "Fredoka One", cursive;
+}
+.card-title {
+  width: 200px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile {
+  /* justify-content: space-around; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 10px 10px 10px 30px;
+  justify-content: space-between;
+}
+.profile i {
+  /* padding-inline: 15px; */
+  font-size: 1.6rem;
+  color: rgb(0, 188, 242);
+}
+.cartdiv:hover {
+  transform: scale(1.13);
+}
+
+.cartdiv {
+  width: 45px;
+  transition: all ease 0.2s;
+  position: relative;
+}
+
+.item-circle {
+  position: absolute;
+  left: 15px;
+  top: -5px;
+  z-index: 1000;
+  text-align: center;
+  vertical-align: top;
+  padding: 0px 6px;
+  height: 18px;
+  background: #ff3f6c;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* .carticon {
+  padding-top: 4px;
+}
+ */
+
+.usericon {
+  margin: 0px 25px;
+  /* padding-top: 4px; */
+}
+
+.card-body {
+  transition: all ease 0.3s;
+}
+.inner:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 10px 0.5px;
+  border-radius: 5px;
+}
+.inner {
+  cursor: pointer;
+  transition: all ease 0.3s;
+  border-radius: 5px;
+  background-color: rgb(246, 245, 248);
+}
+
+.container-fluid a {
+  text-decoration: none;
+  color: black;
+}
+
+Link {
+  text-decoration: none;
+  color: black;
+}
+
+.profile .text {
+  font-size: 1.3rem;
+}
+
+.navbtn {
+  margin-right: 5px;
+}
+
+.search-btn {
+  margin-right: 20px;
+}
+
+.men,
+.women,
+.kids {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 100px;
+  /* margin: 20px; */
+  /* padding-bottom: 10px; */
+}
+
+.main-Content {
+  display: flex;
+  width: 100%;
+  /* height: 100vh; */
+  flex-wrap: wrap;
+  margin-bottom: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.CC {
+  height: 480px;
+  width: 280px;
 }
+.CC img {
+  height: 350px;
+}
+.Search {
+  text-align: center;
+  padding-top: 120px;
+}
+/* ---------------------------------------- */
+@media screen and (max-width: 1050px) {
+  nav h2 {
+    font-size: 1.3rem;
+  }
+  nav .icon {
+    margin-right: 0;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .container-fluid li:hover {
+    color: rgb(0, 188, 242);
+    transform: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 570px) {
+  .d-flex input {
+    width: 300px;
   }
+  .d-flex {
+    flex-direction: column;
+  }
+  .profile {
+    flex-direction: column;
+    padding: none;
+  }
+  .usericon {
+    margin: 0 0;
+    padding: 5px 0;
+  }
+  .userProfile i {
+    margin: none;
+  }
+  .Search {
+    padding-top: 300px;
+  }
+  
 }
