@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import './ProductStyle.css';
@@ -9,12 +9,19 @@ import rupee from './images/rupee.png';
 import arrow from './images/arrow.png';
 
 const Product = () => {
+  const { cartProducts } = useSelector((state) => state.cartReducer);
   const quantity = 1;
-  const [isClicked, setIsClicked] = useState(false);
+  // const [isClicked, setIsClicked] = useState(false);
+  // console.log("isclicked", isClicked);
+  
+
+
   const { id } = useParams();
 
   const dispatch = useDispatch();
   const { product } = useSelector((state) => state.productReducer);
+
+  const inCart = cartProducts.find((pr) => pr.id === id);
 
   useEffect(() => {
     dispatch({ type: 'PRODUCT', id });
@@ -44,7 +51,7 @@ const Product = () => {
             <span className="num">15728 ratings and 3491 reviews</span>
           </div>
           <div className="add-btn">
-            {isClicked ? (
+            {inCart ? (
               <Link to={`/cart`}>
                 <button>
                   <div className="go">Go To Cart</div>
@@ -56,7 +63,7 @@ const Product = () => {
             ) : (
               <button
                 onClick={() => {
-                  setIsClicked(!isClicked);
+                  // setIsClicked(!isClicked);
                   dispatch({
                     type: 'ADD_TO_CART',
                     payload: { product, quantity },

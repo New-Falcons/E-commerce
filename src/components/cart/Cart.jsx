@@ -1,5 +1,5 @@
-import React, {useState,useEffect,useContext} from "react";
-import { useSelector } from "react-redux";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import CartItem from "./cart-item/CartItem";
 import "./Cart-style.css";
 
@@ -8,6 +8,7 @@ import "./Cart-style.css";
 // import cancel from "../images/cancel.png";
 
 const Cart = () => {
+  const dispatch = useDispatch();
   const { cartProducts, totalQuantities, totalPrice } = useSelector(
     (state) => state.cartReducer
   );
@@ -19,15 +20,13 @@ const Cart = () => {
 
   // }, [])
 
-
   // useEffect(()=>{
   //   localStorage.setItem("productsincart", cartProducts)
   // }, [cartProducts])
 
-
   // const [pin, setPin] = useState("");
   // const [isPinEntered, setIsPinEntered] = useState(false);
-  console.log(totalQuantities);
+  console.log(totalQuantities, totalPrice);
   return (
     <div className="container-z">
       <div className="row-y">
@@ -126,7 +125,11 @@ const Cart = () => {
               </div>
               <div className="place-order-btn">
                 <a href="/">
-                  <div className="btn">Place Order</div>
+                  <div className="btn" onClick={()=>{
+                    dispatch({
+                      type: "EMPTY_CART",
+                    });
+                  }}>Place Order</div>
                 </a>
               </div>
               <div className="savings">You will save ₹0 on this order</div>
@@ -137,9 +140,59 @@ const Cart = () => {
         )}
       </div>
 
-    <div className="footer1"> <div className="content2"> <div className="images3"> <img className="footer-bank-ssl" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png" /> <img className="footer-bank-visa" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"/> <img className="footer-bank-mc" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"/> <img className="footer-bank-nb" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"/> <img className="footer-bank-cod" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"/> <img className="footer-bank-rupay" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"/> <img className="footer-bank-paypal" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"/> <img className="footer-bank-bhim" src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"/> </div> <a href="#" className="contact-us"> <span>Need Help ? Contact Us</span> </a> </div></div>
-
-
+      <div className="footer1">
+        {" "}
+        <div className="content2">
+          {" "}
+          <div className="images3">
+            {" "}
+            <img
+              className="footer-bank-ssl"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-visa"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-mc"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-nb"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-cod"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-rupay"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-paypal"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-bhim"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"
+              alt=""
+            />{" "}
+          </div>{" "}
+          <a href="/" className="contact-us">
+            {" "}
+            <span>Need Help ? Contact Us</span>{" "}
+          </a>{" "}
+        </div>
+      </div>
     </div>
   );
 };

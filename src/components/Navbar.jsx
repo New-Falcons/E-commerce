@@ -67,13 +67,13 @@ const Navbar = () => {
               <Link to="/cart">
                 <div className="cartdiv">
                   <i
-                    class="fa fa-shopping-cart carticon"
+                    className="fa fa-shopping-cart carticon"
                     aria-hidden="true"
                   ></i>
                   <span className="item-circle">{cartProducts.length}</span>
                 </div>
               </Link>
-              <i class="fa fa-user usericon" aria-hidden="true"></i>
+              <i className="fa fa-user usericon" aria-hidden="true"></i>
             </div>
           </form>
         </div>
