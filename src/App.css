@@ -325,3 +325,19 @@ Link {
     padding-top: 300px;
   }
 }
+
+
+.temp{
+	padding: 20px 0px;
+}
+
+.product__img img {
+	width: 200px;
+	height: auto;
+	transition: all 0.5s linear;
+}
+
+.product__name{
+	text-transform: capitalize;
+	font-weight: 500;
+}
