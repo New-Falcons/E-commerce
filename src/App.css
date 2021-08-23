@@ -139,12 +139,11 @@ body {
   position: relative;
 }
 
-
 .item-circle {
   position: absolute;
   left: 15px;
-  top:-5px;
-  z-index:1000;
+  top: -5px;
+  z-index: 1000;
   text-align: center;
   vertical-align: top;
   padding: 0px 6px;
@@ -160,9 +159,6 @@ body {
   padding-top: 4px;
 }
  */
-
-
-
 
 .usericon {
   margin: 0px 25px;
@@ -232,5 +228,44 @@ Link {
 .CC img {
   height: 350px;
 }
+.Search {
+  text-align: center;
+  padding-top: 120px;
+}
+/* ---------------------------------------- */
+@media screen and (max-width: 1050px) {
+  nav h2 {
+    font-size: 1.3rem;
+  }
+  nav .icon {
+    margin-right: 0;
+  }
 
-
+  .container-fluid li:hover {
+    color: rgb(0, 188, 242);
+    transform: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  .d-flex input {
+    width: 300px;
+  }
+  .d-flex {
+    flex-direction: column;
+  }
+  .profile {
+    flex-direction: column;
+    padding: none;
+  }
+  .usericon {
+    margin: 0 0;
+    padding: 5px 0;
+  }
+  .userProfile i {
+    margin: none;
+  }
+  .Search {
+    padding-top: 300px;
+  }
+  
+}

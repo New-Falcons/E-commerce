@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
-import { useSelector,useDispatch } from 'react-redux';
-
+import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 
 const Navbar = () => {
   const dispatch = useDispatch();
   let val = "";
-  const {cartProducts} = useSelector((state)=> state.cartReducer)
+  const { cartProducts } = useSelector((state) => state.cartReducer);
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light nav"
@@ -40,28 +39,28 @@ const Navbar = () => {
             </Link>
           </ul>
           <form className="d-flex">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search for products, brands and more"
-              aria-label="Search"
-              onChange={(e) => {
-                val = e.target.value.toLowerCase();
-                console.log(val);
-
-                dispatch({
-                  type: "SEARCH",
-                  payload: val,
-                });
-              }}
-            />
             <Link to="/search">
-            <button
+              <input
+                className="form-control me-2"
+                type="search"
+                placeholder="Search for products, brands and more"
+                aria-label="Search"
+                onChange={(e) => {
+                  val = e.target.value.toLowerCase();
+                  console.log(val);
+
+                  dispatch({
+                    type: "SEARCH",
+                    payload: val,
+                  });
+                }}
+              />
+              {/* <button
               className="btn btn-outline-info search-btn"
               type="submit"
             >
               Search
-            </button>
+            </button> */}
             </Link>
             <div className="profile">
               <Link to="/cart">
@@ -73,7 +72,9 @@ const Navbar = () => {
                   <span className="item-circle">{cartProducts.length}</span>
                 </div>
               </Link>
-              <i className="fa fa-user usericon" aria-hidden="true"></i>
+              <div className="userProfile">
+                <i className="fa fa-user usericon" aria-hidden="true"></i>
+              </div>
             </div>
           </form>
         </div>
