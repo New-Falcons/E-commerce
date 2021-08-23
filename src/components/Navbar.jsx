@@ -55,12 +55,6 @@ const Navbar = () => {
                   });
                 }}
               />
-              {/* <button
-              className="btn btn-outline-info search-btn"
-              type="submit"
-            >
-              Search
-            </button> */}
             </Link>
             <div className="profile">
               <Link to="/cart">
@@ -72,9 +66,11 @@ const Navbar = () => {
                   <span className="item-circle">{cartProducts.length}</span>
                 </div>
               </Link>
-              <div className="userProfile">
-                <i className="fa fa-user usericon" aria-hidden="true"></i>
-              </div>
+              <Link to ="/Orders">
+                <div className="userProfile">
+                  <i className="fa fa-user usericon" aria-hidden="true"></i>
+                </div>
+              </Link>
             </div>
           </form>
         </div>

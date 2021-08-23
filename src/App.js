@@ -12,10 +12,13 @@ import WomenSection from "./components/WomenSection";
 import KidsSection from "./components/KidsSection";
 import "./App.css";
 import SearchPage from "./components/SearchPage";
+import Orders from "./components/Orders";
 
 function App() {
-  const { cartProducts, totalQuantities } = useSelector((state) => state.cartReducer);
-  
+  const { cartProducts, totalQuantities } = useSelector(
+    (state) => state.cartReducer
+  );
+
   useEffect(() => {
     localStorage.setItem("productsInCart", JSON.stringify(cartProducts));
   }, [cartProducts, totalQuantities]);
@@ -32,6 +35,7 @@ function App() {
           <Route exact path="/women" component={WomenSection} />
           <Route exact path="/kids" component={KidsSection} />
           <Route exact path="/search" component={SearchPage} />
+          <Route exact path="/Orders" component={Orders} />
         </Switch>
       </div>
     </Router>
