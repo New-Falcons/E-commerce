@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux"
 import CartItem from "./cart/cart-item/CartItem";
+import OrderShow from "./OrderShow"
 
 function Orders() {
   const {myOrders} = useSelector((state)=>state.cartReducer)
@@ -12,19 +13,24 @@ function Orders() {
       </div>
       <hr />
       <div className="items">
-            <div className="item-row">
-              {myOrders.length > 0 ? (
-                <>
-                  {myOrders.map((order) => (
-                    order.map((item) => (<CartItem key={item.id} item={item} />)
-                    )
+        <div className="item-row">
+          {myOrders.length > 0 ? (
+            <>
+              {myOrders.map((order) => (
+                <div className="orderone">
+                  {order.map((item) => (
+                    <OrderShow key={item.id} item={item} />
                   ))}
-                </>
-              ) : (
-""              )}
-            </div>
+                  <hr />
+                </div>
+              ))}
+            </>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
-    </div>  
+    </div>
   );
 }
 
