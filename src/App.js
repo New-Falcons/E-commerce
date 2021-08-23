@@ -20,6 +20,10 @@ function App() {
     localStorage.setItem("productsInCart", JSON.stringify(cartProducts));
   }, [cartProducts, totalQuantities]);
 
+  // useEffect(() => {
+  //   localStorage.setItem("", JSON.stringify(cartProducts));
+  // }, []);
+
   return (
     <Router>
       <div className="App">

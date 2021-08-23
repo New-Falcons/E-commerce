@@ -247,27 +247,64 @@ Link {
   }
 }
 @media screen and (max-width: 570px) {
+
+.navbar-collapse {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
   .d-flex input {
-    width: 300px;
+    width: 305px;
+    padding-left: 10px;
   }
-  .d-flex {
+  /* .d-flex {
     flex-direction: column;
-  }
-  .profile {
+  } */
+  /* .profile {
     flex-direction: column;
     padding: none;
-  }
-  .usericon {
+  } */
+  /* .usericon {
     margin: 0 0;
     padding: 5px 0;
+  } */
+
+  .nav-item{
+    margin-inline: 10px;
   }
-  .userProfile i {
-    margin: none;
-  }
+
+  
   .Search {
     padding-top: 300px;
   }
   
+}
+
+
+@media screen and (max-width: 480px){
+  .d-flex input{
+    width: 200px;
+  }
+}
+
+
+@media screen and (max-width: 380px){
+  .usericon{
+    margin: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .profile{
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 340px){
+  .d-flex input{
+    width: 150px;
+  }
 }
 
 

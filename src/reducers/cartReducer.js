@@ -13,6 +13,21 @@ for (let i = 0; i < productsFromLocalStorage.length; i++) {
   totalQuantityFromLocalStorage += productsFromLocalStorage[i].quantity;
 }
 
+// var lastOrderFromLocalStorage = JSON.parse(
+//   localStorage.getItem("recentOrder") || "[]"
+// );
+
+var ordersFromLocalStorage = JSON.parse(
+  localStorage.getItem("recentOrder") || "[]"
+);
+
+
+
+var myOrder2 = JSON.parse(
+  localStorage.getItem("myOrders1") || "[]"
+);
+
+
 
 const initialState = {
   products: [
@@ -531,6 +546,8 @@ const initialState = {
   cartProducts: productsFromLocalStorage,
   totalPrice: totalPriceFromLocalStorage,
   totalQuantities: totalQuantityFromLocalStorage,
+  recentOrder: ordersFromLocalStorage,
+  myOrders: myOrder2,
 };
 
 const cartReducer = (state = initialState, action) => {
@@ -600,10 +617,18 @@ const cartReducer = (state = initialState, action) => {
         totalQuantities: state.totalQuantities - findPro.quantity,
       };
     case "EMPTY_CART":
+      const newOrder = state.cartProducts
+      console.log(newOrder)
+      const a = state.myOrders
+      a.push(newOrder)
+      console.log(a)
+      localStorage.setItem("Myorders1", JSON.stringify(a));
       return {
         ...state,
+        // myOrders: allOrders,
         cartProducts: []
       }
+    
     default:
       return state;
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import CartItem from "./cart-item/CartItem";
 import "./Cart-style.css";
 
@@ -9,7 +10,7 @@ import "./Cart-style.css";
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const { cartProducts, totalQuantities, totalPrice } = useSelector(
+  const { cartProducts, totalQuantities, totalPrice, myOrders } = useSelector(
     (state) => state.cartReducer
   );
 
@@ -124,13 +125,15 @@ const Cart = () => {
                 </div>
               </div>
               <div className="place-order-btn">
-                <a href="/">
-                  <div className="btn" onClick={()=>{
+                <Link to="/">
+                  <div className="btn" onClick={() => {
+                    localStorage.setItem("recentOrder", JSON.stringify(cartProducts));
                     dispatch({
                       type: "EMPTY_CART",
                     });
+                    console.log(myOrders)
                   }}>Place Order</div>
-                </a>
+                </Link>
               </div>
               <div className="savings">You will save ₹0 on this order</div>
             </div>
