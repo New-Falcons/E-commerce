@@ -66,9 +66,9 @@ const Navbar = () => {
                   <span className="item-circle">{cartProducts.length}</span>
                 </div>
               </Link>
-              <Link to ="/Orders">
+              <Link to="/Orders">
                 <div className="userProfile">
-                  <i className="fa fa-user usericon" aria-hidden="true"></i>
+                <i class="fa fa-history"></i>
                 </div>
               </Link>
             </div>

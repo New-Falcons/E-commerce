@@ -291,6 +291,9 @@ Link {
 .date {
   margin: 20px 30px;
 }
+.userProfile i {
+  margin: 0 5px;
+}
 /* ---------------------------------------- */
 @media screen and (max-width: 1050px) {
   nav h2 {
