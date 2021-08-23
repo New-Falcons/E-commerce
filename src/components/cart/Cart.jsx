@@ -1,30 +1,41 @@
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import CartItem from "./cart-item/CartItem";
 import "./Cart-style.css";
-import location from "../images/location.png";
-import check from "../images/check.png";
-import cancel from "../images/cancel.png";
+
+// import location from "../images/location.png";
+// import check from "../images/check.png";
+// import cancel from "../images/cancel.png";
 
 const Cart = () => {
+  const dispatch = useDispatch();
   const { cartProducts, totalQuantities, totalPrice } = useSelector(
     (state) => state.cartReducer
   );
 
-  const [pin, setPin] = useState("");
-  const [isPinEntered, setIsPinEntered] = useState(false);
-  console.log(totalQuantities);
+  // let parsedCart = cartProducts;
+
+  // useEffect(()=>{
+  //   parsedCart = localStorage.getItem("productsincart")
+
+  // }, [])
+
+  // useEffect(()=>{
+  //   localStorage.setItem("productsincart", cartProducts)
+  // }, [cartProducts])
+
+  // const [pin, setPin] = useState("");
+  // const [isPinEntered, setIsPinEntered] = useState(false);
+  console.log(totalQuantities, totalPrice);
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-1">
+    <div className="container-z">
+      <div className="row-y">
+        <div className="column1">
           <div className="row-inner">
             <div className="my-cart">My Cart ({cartProducts.length})</div>
-            <div className="add-div">
+            {/* <div className="add-div">
               <div className="add-heading">
-                <div>
-                  <img src={location} alt="" />
-                </div>
+                <div><img src={location} alt="" /></div>
                 <div>Deliver to</div>
               </div>
               <div className="address">
@@ -67,7 +78,7 @@ const Cart = () => {
                   </div>
                 )}
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="items">
             <div className="item-row">
@@ -85,7 +96,7 @@ const Cart = () => {
         </div>
 
         {cartProducts.length > 0 ? (
-          <div className="col-2">
+          <div className="column2">
             <span className="price-heading">Price Details</span>
             <div className="desc-div">
               <div className="price-div">
@@ -114,7 +125,11 @@ const Cart = () => {
               </div>
               <div className="place-order-btn">
                 <a href="/">
-                  <div className="btn">Place Order</div>
+                  <div className="btn" onClick={()=>{
+                    dispatch({
+                      type: "EMPTY_CART",
+                    });
+                  }}>Place Order</div>
                 </a>
               </div>
               <div className="savings">You will save ₹0 on this order</div>
@@ -123,6 +138,60 @@ const Cart = () => {
         ) : (
           ""
         )}
+      </div>
+
+      <div className="footer1">
+        {" "}
+        <div className="content2">
+          {" "}
+          <div className="images3">
+            {" "}
+            <img
+              className="footer-bank-ssl"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-visa"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-mc"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-nb"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-cod"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-rupay"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-paypal"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"
+              alt=""
+            />{" "}
+            <img
+              className="footer-bank-bhim"
+              src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"
+              alt=""
+            />{" "}
+          </div>{" "}
+          <a href="/" className="contact-us">
+            {" "}
+            <span>Need Help ? Contact Us</span>{" "}
+          </a>{" "}
+        </div>
       </div>
     </div>
   );

@@ -1,23 +1,30 @@
-import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import "./ProductStyle.css";
-import star from "./images/star-512.png";
-import cart from "./images/cart.png";
-import refresh from "./images/refresh.png";
-import rupee from "./images/rupee.png";
-import arrow from "./images/arrow.png";
+import React, { useEffect} from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import './ProductStyle.css';
+import star from './images/star-512.png';
+import cart from './images/cart.png';
+import refresh from './images/refresh.png';
+import rupee from './images/rupee.png';
+import arrow from './images/arrow.png';
 
 const Product = () => {
+  const { cartProducts } = useSelector((state) => state.cartReducer);
   const quantity = 1;
-  const [isClicked, setIsClicked] = useState(false);
+  // const [isClicked, setIsClicked] = useState(false);
+  // console.log("isclicked", isClicked);
+  
+
+
   const { id } = useParams();
 
   const dispatch = useDispatch();
   const { product } = useSelector((state) => state.productReducer);
 
+  const inCart = cartProducts.find((pr) => pr.id === id);
+
   useEffect(() => {
-    dispatch({ type: "PRODUCT", id });
+    dispatch({ type: 'PRODUCT', id });
     // eslint-disable-next-line
   }, [id]);
 
@@ -26,12 +33,12 @@ const Product = () => {
       <div className="row1">
         <div className="col-5">
           <div className="product-img">
-            <img src={product.image} alt="" />
+            <img src={product.url} alt="" />
           </div>
         </div>
         <div className="col-6 pd-l">
-          <div className="p-company">Nike</div>
-          <div className="p-name">{product.name}</div>
+          <div className="p-company">{product.title}</div>
+          <div className="p-name">{product.description}</div>
           <div className="p-price">Rs. {product.price}</div>
           <div className="xyz">inclusive of all taxes</div>
           <div className="review-rating">
@@ -44,7 +51,7 @@ const Product = () => {
             <span className="num">15728 ratings and 3491 reviews</span>
           </div>
           <div className="add-btn">
-            {isClicked ? (
+            {inCart ? (
               <Link to={`/cart`}>
                 <button>
                   <div className="go">Go To Cart</div>
@@ -56,9 +63,9 @@ const Product = () => {
             ) : (
               <button
                 onClick={() => {
-                  setIsClicked(!isClicked);
+                  // setIsClicked(!isClicked);
                   dispatch({
-                    type: "ADD_TO_CART",
+                    type: 'ADD_TO_CART',
                     payload: { product, quantity },
                   });
                 }}

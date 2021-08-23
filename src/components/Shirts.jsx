@@ -1,27 +1,13 @@
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { shirts } from "../data/db.json";
 
-const SearchPage = () => {
-  const { filteredProducts } = useSelector((state) => state.productReducer);
-
-  if (filteredProducts.length === 0)
-    return (
-      <div  className="Search">
-        <h1>We couldn't find any matches!</h1>
-        <p style={{ color: "grey", marginBlock: "20px", fontSize: "18px" }}>
-          Please check the spelling or try searching something else
-        </p>
-        <div style={{ marginTop: "50px" }}>
-        {/* eslint-disable-next-line */}
-          <img src="https://constant.myntassets.com/web/assets/img/11488523304066-search404.png" ></img>
-        </div>
-      </div>
-    );
-
+export const Shirts = () => {
+  const shirtsfive = [shirts[0], shirts[1], shirts[2], shirts[3], shirts[4]];
   return (
-    <div className="men">
-      <div className="main-Content">
-        {filteredProducts.map((product) => (
+    <div>
+      <h1 className="head" id="shirts">Shirts</h1>
+      <div className="cardone main-Content">
+        {shirtsfive.map((product) => (
           <div className="inner CC">
             <Link
               to={`/product/${parseInt(product.id)}`}
@@ -35,14 +21,14 @@ const SearchPage = () => {
                   </h4>
                   <p className="brand-name">{product.description}</p>
                   <h6 className="brand-name">Rs. {product.price}</h6>
+                  
                 </div>
               </div>
             </Link>
           </div>
         ))}
+        
       </div>
     </div>
   );
 };
-
-export default SearchPage;

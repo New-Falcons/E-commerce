@@ -1,11 +1,25 @@
+.col-5 {
+  width: 34.6666667vw;
+}
+
+.col-6 {
+  width: 50vw;
+}
+
 .product-container {
   width: 90vw;
-  margin: 50px auto;
+  margin: 120px auto;
+}
+
+.product-container img,
+svg {
+  vertical-align: baseline;
 }
 
 .product-img img {
-  width: 35vw;
+  width: 28vw;
   height: auto;
+  padding: 30px;
 }
 
 .pd-l {
@@ -53,7 +67,7 @@
 }
 
 .star img {
-  height: 15px;
+  height: 12px;
   margin: 2px 0 0 2px;
 }
 
@@ -92,17 +106,19 @@
   justify-content: center;
   width: 300px;
   height: 50px;
-  background-color: #ff3e6c;
+  background-color: rgb(0, 188, 242);
   color: white;
-  padding-top: 15px;
+  padding-top: 12px;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 500;
   font-size: 18px;
+  border: 5px;
+  transition: all ease 0.2s;
 }
 
 .add-btn button:hover {
-  background-color: #f85178;
+  background-color: rgb(4, 177, 224);
 }
 
 .add {
@@ -114,7 +130,7 @@
 }
 
 .add-btn img {
-  width: 22px;
+  height: 25px;
 }
 
 .seller {
@@ -133,12 +149,12 @@
   display: inline-block;
   background-color: #ff3e6c;
   color: white;
-  padding: 1px 5px;
+  padding: 0px 5px;
   border-radius: 14px;
 }
 
 .rating img {
-  height: 15px;
+  height: 12px;
   margin: 2px 0 0 2px;
 }
 
@@ -160,7 +176,8 @@
 }
 
 .return img {
-  height: 15px;
+  margin-top: 2px;
+  height: 17px;
   margin-right: 10px;
 }
 
@@ -177,8 +194,9 @@
 }
 
 .cod img {
+  margin-top: 2px;
+  height: 17px;
   margin-right: 10px;
-  height: 15px;
 }
 
 .res {
@@ -241,43 +259,40 @@
   margin-bottom: 5px;
 }
 
-
-@media only screen and (max-width: 720px){
-
+@media only screen and (max-width: 720px) {
   .product-container {
     width: 90vw;
-    margin: 5px auto;
-}
+    margin: 40px auto;
+  }
 
-.row1{
-  display: flex;
-  flex-direction: column;
-}
+  .row1 {
+    display: flex;
+    flex-direction: column;
+  }
 
-.col-6{
+  .col-6 {
     width: 75vw;
     margin: 5px auto;
   }
 
-  .pd-l{
+  .pd-l {
     padding: 0;
   }
 
-  .col-5{
+  .col-5 {
     width: 80vw;
     margin: 20px auto;
   }
 
   .product-img img {
     width: 80vw;
-    height: auto}
+    height: auto;
+  }
+}
 
-} 
-
-
-@media only screen and (max-width: 400px){
- .col-6{
+@media only screen and (max-width: 400px) {
+  .col-6 {
     width: 80vw;
     margin: 5px auto;
-  } 
+  }
 }
