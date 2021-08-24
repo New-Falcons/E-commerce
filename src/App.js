@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 // import Home from "./components/HomePage";
-import Home from "./components/Homepage";
+import Home from "./components/HomePage"
 import Cart from "./components/cart/Cart";
 import Product from "./components/Product";
 import MenSection from "./components/MenSection";
@@ -23,9 +23,9 @@ function App() {
   useEffect(() => {
     localStorage.setItem("productsInCart", JSON.stringify(cartProducts));
   }, [cartProducts, totalQuantities]);
-  useEffect(() => {
-    localStorage.setItem("Myorders1", JSON.stringify(myOrders));
-  }, [cartProducts, totalQuantities]);
+  // useEffect(() => {
+  //   localStorage.setItem("Myorders1", JSON.stringify(myOrders));
+  // }, [cartProducts, totalQuantities]);
   // useEffect(() => {
   //   localStorage.setItem("", JSON.stringify(cartProducts));
   // }, []);
