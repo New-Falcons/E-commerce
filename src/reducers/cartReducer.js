@@ -624,7 +624,8 @@ const cartReducer = (state = initialState, action) => {
       return {
         ...state,
         // myOrders: allOrders,
-        cartProducts: []
+        cartProducts: [],
+        totalPrice: 0,
       }
     
     default:
