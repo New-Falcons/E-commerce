@@ -1,19 +1,19 @@
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { useEffect } from "react";
-import { useSelector } from "react-redux";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Navbar from "./components/Navbar";
+import Navbar from './components/Navbar';
 // import Home from "./components/HomePage";
-import Home from "./components/HomePage"
-import Cart from "./components/cart/Cart";
-import Product from "./components/Product";
-import MenSection from "./components/MenSection";
-import WomenSection from "./components/WomenSection";
-import KidsSection from "./components/KidsSection";
-import "./App.css";
-import SearchPage from "./components/SearchPage";
-import Orders from "./components/Orders";
+import Home from './components/Homepage';
+import Cart from './components/cart/Cart';
+import Product from './components/Product';
+import MenSection from './components/MenSection';
+import WomenSection from './components/WomenSection';
+import KidsSection from './components/KidsSection';
+import './App.css';
+import SearchPage from './components/SearchPage';
+import Orders from './components/Orders';
 
 function App() {
   const { cartProducts, totalQuantities, myOrders } = useSelector(
@@ -21,7 +21,7 @@ function App() {
   );
 
   useEffect(() => {
-    localStorage.setItem("productsInCart", JSON.stringify(cartProducts));
+    localStorage.setItem('productsInCart', JSON.stringify(cartProducts));
   }, [cartProducts, totalQuantities]);
   // useEffect(() => {
   //   localStorage.setItem("Myorders1", JSON.stringify(myOrders));
